@@ -6,4 +6,4 @@ if A*B < 0 :
 elif A*B > 0 :
     print('The result is positve')
 else :
-    print('The result is zero')
+    print('The result is positive and negative')
