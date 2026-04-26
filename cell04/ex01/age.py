@@ -1,0 +1,5 @@
+age = int(input('Please tell me your age : '))
+print('You are currently : ' + str(age))
+print('Your age in 10 years will be' ,age + 10,'years')
+print('Your age in 20 years will  be',age + 20,'years')
+print('Your age in 30 years will be',age + 30,'years')

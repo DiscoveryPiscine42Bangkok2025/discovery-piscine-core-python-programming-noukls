@@ -1,0 +1,7 @@
+A = int(input('Give me the first number '))
+B = int(input('Give me the second number '))
+print('Thank you!')
+print(A,'+',B,'=',A+B)
+print(A,'-',B,'=',A-B)
+print(A,'*',B,'=',A*B)
+print(A,'/',B,'=',A/B)
