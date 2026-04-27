@@ -1,2 +1,2 @@
 age = int(input())
-print(age)
+print(age+42)
