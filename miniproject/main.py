@@ -1,7 +1,7 @@
 from checkmate import *
 
 import numpy as np
-rows , cols = map(int,input().split())
+#rows , cols = map(int,input().split())
 print(rows,cols)
 A = np.empty((rows,cols) , dtype = object)
 i = 0

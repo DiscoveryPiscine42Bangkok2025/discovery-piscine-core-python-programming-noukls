@@ -1,7 +1,7 @@
-#rows, cols = map(int, input().split())
+
 #grid = [list(map(int, input().split())) for _ in range(rows)]
 
-
+rows, cols = map(int, input().split())
 # หา king
 def find_king(A) :
     target = "k"
