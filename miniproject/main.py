@@ -11,7 +11,7 @@ for i in range(rows) :
         A[i][j] = str(input())
         
 print(A)
-#find_king(A)
+find_king(A)
 #find_pawn(A)
 #find_queen(A)
 #find_bishop(A)

@@ -32,9 +32,9 @@ def find_rook(A):
     for i in range(rows):
         for j in range(cols):
             if A[i][j] == "r":
-               print('Rook : ',i,j) 
-               rooks.append((i,j))
-    return (i,j)
+                print('Rook : ',i,j) 
+                rooks.append((i,j))
+                return (i,j)
 #หา bishop
 def find_bishop(A):
     bishops = []
