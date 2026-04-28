@@ -25,7 +25,7 @@ def find_queen(A):
             if A[i][j] == "q" :
                 print('Queen : ',i,j)
                 queens.append((i,j))
-    return (pawns)
+    return (i,j)
 #หา rook
 def find_rook(A):
     rooks = []
@@ -34,7 +34,7 @@ def find_rook(A):
             if A[i][j] == "r":
                print('Rook : ',i,j) 
                rooks.append((i,j))
-    return (rooks)
+    return (i,j)
 #หา bishop
 def find_bishop(A):
     bishops = []
@@ -43,7 +43,7 @@ def find_bishop(A):
             if A[i][j] == "b":
                print('Bishop : ',i,j) 
                bishops.append((i,j))
-    return (bishops)
+    return (i,j)
     
 #pawn กิน
 def pawn_moves(A, pos):
@@ -60,7 +60,7 @@ def pawn_moves(A, pos):
                 
             else :
                 print('fail')      
-    return pawn_move
+    return (i,j)
 
 #rook กิน
 def rook_moves(A, pos):
@@ -83,7 +83,7 @@ def rook_moves(A, pos):
             ni += di
             nj += dj
 
-    return rook_move
+    return (i,j)
 #bishop กิน
 def bishop_moves(A, pos):
     bishop_move = []
@@ -104,7 +104,7 @@ def bishop_moves(A, pos):
             ni += di
             nj += dj
 
-    return bishop_move
+    return (i,j)
 #queen  กิน
 def queen_moves(A, pos):
     return rook_moves(A, pos) + bishop_moves(A, pos)
