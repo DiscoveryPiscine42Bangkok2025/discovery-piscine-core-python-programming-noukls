@@ -1,6 +1,4 @@
 
-#grid = [list(map(int, input().split())) for _ in range(rows)]
-
 rows, cols = map(int, input().split())
 # หา king
 def find_king(A) :
@@ -10,8 +8,6 @@ def find_king(A) :
             if A[i][j] == target :
                 print('King : ',i,j)
                 return(i,j)
-            else :
-                print('No king')
 #หาpawn
 def find_pawn(A):
     pawns = []
@@ -29,7 +25,7 @@ def find_queen(A):
             if A[i][j] == "q" :
                 print('Queen : ',i,j)
                 queens.append((i,j))
-    return (i, j)
+    return (pawns)
 #หา rook
 def find_rook(A):
     rooks = []
@@ -38,7 +34,7 @@ def find_rook(A):
             if A[i][j] == "r":
                print('Rook : ',i,j) 
                rooks.append((i,j))
-    return (i, j)
+    return (rooks)
 #หา bishop
 def find_bishop(A):
     bishops = []
@@ -47,7 +43,7 @@ def find_bishop(A):
             if A[i][j] == "b":
                print('Bishop : ',i,j) 
                bishops.append((i,j))
-    return (i, j)
+    return (bishops)
     
 #pawn กิน
 def pawn_moves(A, pos):
@@ -64,7 +60,7 @@ def pawn_moves(A, pos):
                 
             else :
                 print('fail')      
-    return pawn_moves
+    return pawn_move
 
 #rook กิน
 def rook_moves(A, pos):
