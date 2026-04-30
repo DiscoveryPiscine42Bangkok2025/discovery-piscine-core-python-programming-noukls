@@ -1,11 +1,10 @@
 import sys
 
-args = sys.argv[1:]
 
-if len(args) != 1:
+if len(sys.argv) != 2:
     print("none")
 else:
-    string = args[0]
+    string = sys.argv[1]
     result = ""
     for char in string:
         if char == "z":
