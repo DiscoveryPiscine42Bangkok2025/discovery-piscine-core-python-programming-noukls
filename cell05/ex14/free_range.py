@@ -2,12 +2,10 @@ import sys
 import numpy as np
 i = int(sys.argv[1])
 x = int(sys.argv[2])
-A = np.zeros(x-i)
-a = 0
+A = np.zeros(x-i+1)
+print(A)
 if len(sys.argv) != 3 :
     print('none')
 else :
-    for i in range(x) :
-        A[a] = i
-        a = a + 1
+    A = np.arange(i,x+1,1)
 print(A)
